@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Dự án 3 tự làm</title>
+        <title>Modulars</title>
 
         <!-- Favicon -->
 
@@ -28,7 +28,7 @@
         <!-- Embed CSS -->
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
-    <body style="height: 10000px">
+    <body>
         <header class="header__fixed">
             <div class="container">
                 <div class="header__inner--top header__inner">
@@ -36,10 +36,10 @@
                         <img src="./assets/image/logo.svg" alt="MODULARS" />
                     </a>
                     <nav class="nav">
-                        <a href="#!" class="nav__title">Home</a>
-                        <a href="#!" class="nav__title">About</a>
-                        <a href="#!" class="nav__title">Blog</a>
-                        <a href="#!" class="nav__title">Contact</a>
+                        <a href="#" class="nav__title">Home</a>
+                        <a href="#about" class="nav__title">About</a>
+                        <a href="#blog" class="nav__title">Blog</a>
+                        <a href="#contact" class="nav__title">Contact</a>
                     </nav>
                     <a href="#!" class="header__btn btn">Sign Up</a>
                 </div>
@@ -307,7 +307,7 @@
             </section>
 
             <!-- Info -->
-            <section class="info">
+            <section class="info" id="about">
                 <div class="container">
                     <div class="info__row">
                         <div class="info__img">
@@ -611,7 +611,7 @@
             </section>
 
             <!-- Blog and article -->
-            <section class="blog">
+            <section class="blog" id="blog">
                 <div class="container">
                     <div class="blog__inner">
                         <div class="start-title">BLOG & ARTICLES</div>
@@ -709,7 +709,121 @@
                 </div>
             </section>
         </main>
-
         <!-- footer -->
+        <footer class="footer" id="contact">
+            <div class="container">
+                <div class="footer-inner__grid">
+                    <div class="footer__sign-up">
+                        <label for="email" class="sign-up__heading">
+                            Sign up for our newsletter
+                        </label>
+
+                        <!-- form-sign-up -->
+                        <form
+                            action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                            class="sign-up__email"
+                            autocomplete="off"
+                        >
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                class="input-email"
+                                placeholder="Enter your email"
+                                required
+                                pattern="^[a-zA-Z0-9_.±]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$"
+                            />
+                            <!-- error email -->
+                            <p class="error__email">
+                                Please type your correct email !
+                            </p>
+
+                            <a href="#!" class="sign-up__arrow">
+                                <svg
+                                    width="22"
+                                    height="12"
+                                    viewBox="0 0 22 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 6.29415H21M21 6.29415L15.7059 1.00003M21 6.29415L15.7059 11"
+                                        stroke="#C4C4C4"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </form>
+                        <div class="footer__social">
+                            <a href="#!" class="social__inner">
+                                <img
+                                    src="./assets/image/social/face.svg"
+                                    alt="facebook"
+                                    class="social-inner__desc"
+                                />
+                            </a>
+                            <a href="#!" class="social__inner">
+                                <div class="social-inner__inst">
+                                    <img
+                                        src="./assets/image/social/inst.svg"
+                                        alt="Instagram"
+                                        class="social-inner__desc"
+                                    />
+                                </div>
+                            </a>
+                            <a href="#!" class="social__inner">
+                                <img
+                                    src="./assets/image/social/twitter.svg"
+                                    alt="Twitter"
+                                    class="social-inner__desc"
+                                />
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- footer-list 1 -->
+                    <ul class="footer__list">
+                        Pages
+                        <li class="footer__item"><a href="#!">Home</a></li>
+                        <li class="footer__item"><a href="#!">About</a></li>
+                        <li class="footer__item"><a href="#!">Blog</a></li>
+                        <li class="footer__item"><a href="#!">Blog Post</a></li>
+                    </ul>
+
+                    <!-- footer-list 2 -->
+                    <ul class="footer__list">
+                        Product
+                        <li class="footer__item"><a href="#!">Home</a></li>
+                        <li class="footer__item"><a href="#!">About</a></li>
+                        <li class="footer__item"><a href="#!">Blog</a></li>
+                        <li class="footer__item"><a href="#!">Blog Post</a></li>
+                    </ul>
+
+                    <!-- footer-list 3 -->
+                    <ul class="footer__list">
+                        Overview
+                        <li class="footer__item"><a href="#!">Home1</a></li>
+                        <li class="footer__item"><a href="#!">Home2</a></li>
+                        <li class="footer__item"><a href="#!">Home3</a></li>
+                        <li class="footer__item"><a href="#!">Home4</a></li>
+                    </ul>
+
+                    <!-- footer-list 4 -->
+                    <ul class="footer__list">
+                        About Us
+                        <li class="footer__item"><a href="#!">Team</a></li>
+                        <li class="footer__item"><a href="#!">Investor</a></li>
+                        <li class="footer__item"><a href="#!">Blog</a></li>
+                        <li class="footer__item"><a href="#!">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer__line"></div>
+                <p class="footer__coppy-right">
+                    2021 GDN. Copyright and All rights reserved.
+                </p>
+            </div>
+        </footer>
     </body>
 </html>
