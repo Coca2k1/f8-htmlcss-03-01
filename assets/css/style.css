@@ -78,6 +78,14 @@ button {
     line-height: 1.24; /* 123.81% */
 }
 
+.font-desc {
+    color: #7d8188;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.62; /* 162.5% */
+}
+
 /* Header fixed */
 
 .header__fixed {
@@ -561,8 +569,6 @@ button {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.4; /* 140% */
-    /* padding-bottom: 3px; */
-    /* border-bottom: 2px solid #eaeaea; */
 }
 
 .info__position__progress::after {
@@ -654,11 +660,6 @@ button {
 
 .info__content-desc {
     margin-top: 11px;
-    color: #7d8188;
-    font-family: Poppins;
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.62; /* 162.5% */
 }
 
 .info__status-desc {
@@ -731,7 +732,6 @@ button {
         #83a17d 4.17%,
         rgba(131, 161, 125, 0) 36.46%
     );
-    /* display: none; */
 }
 
 .step__list:hover {
@@ -749,6 +749,7 @@ button {
     height: 444px;
     object-fit: cover;
     display: none;
+    transition: 0.25s linear;
 }
 
 .step__number {
@@ -825,8 +826,6 @@ button {
 .video__heading {
     max-width: 457px;
     color: #e7f9f9;
-
-    /* Heading/H3 42px bold */
     font-family: Poppins;
     font-size: 4.2rem;
     font-style: normal;
@@ -892,4 +891,71 @@ button {
     height: 544px;
     object-fit: cover;
     border-radius: 22px;
+}
+
+/* feature */
+.feature {
+    margin-top: 140px;
+    text-align: center;
+}
+
+.feature__heading,
+.feature__desc {
+    margin: 0 auto;
+}
+
+.feature__heading {
+    max-width: 520px;
+}
+
+.feature__desc {
+    margin-top: 20px;
+    max-width: 547px;
+}
+
+.feature__item {
+    margin-top: 103px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 362px;
+    border-radius: 160px;
+    border: 1.5px solid #cecece;
+    overflow: hidden;
+}
+
+.feature__list:hover {
+    border-color: transparent;
+    border-radius: 160px;
+    background: #fff;
+    box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.2);
+    transform: translateY(-59px);
+}
+
+.feature-item__title {
+    margin-top: 26px;
+    color: #152427;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.feature-item__desc {
+    max-width: 286px;
+    margin-top: 9px;
+    color: #7d8188;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71; /* 171.429% */
 }
