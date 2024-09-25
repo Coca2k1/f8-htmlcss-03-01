@@ -411,16 +411,17 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.25s linear;
 }
 
 .arrow-right {
     color: #152427;
+    transition: 0.25s ease;
 }
 
 .arrow-left {
     rotate: 180deg;
     color: #152427;
+    transition: 0.25s ease;
 }
 
 .transfer__left:hover,
@@ -1159,12 +1160,13 @@ button {
 }
 
 .error__email {
-    color: red;
+    color: #fff;
     font-family: poppins;
     font-size: 1.8rem;
     font-weight: 500;
     margin-top: 10px;
     visibility: hidden;
+    text-decoration: wavy;
 }
 
 .input-email:invalid:not(:placeholder-shown) + .error__email {
