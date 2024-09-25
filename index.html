@@ -605,12 +605,17 @@
                         />
                     </div>
 
-                    <video
-                        src="./assets/video/binhyen-vu.mp4"
-                        preload="auto"
-                        controls
-                        class="video__clip"
-                    ></video>
+                    <div class="video__container">
+                        <video
+                            src="./assets/video/binhyen-vu.mp4"
+                            preload="auto"
+                            controls
+                            class="video__clip"
+                        ></video>
+                        <div class="video-clip__play">
+                            <img src="./assets/image/button-play.svg" alt="" />
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -899,5 +904,26 @@
                 </p>
             </div>
         </footer>
+
+        <script>
+            const video = document.querySelector(".video__clip"); // Chọn video bằng class
+            const playButton = document.querySelector(".video-clip__play"); // Chọn nút Play bằng class
+
+            playButton.addEventListener("click", function () {
+                if (video.paused) {
+                    video.play();
+                    playButton.style.display = "none"; // Ẩn nút Play khi video đang phát
+                }
+            });
+
+            // Thêm sự kiện để hiển thị nút Play khi video bị dừng
+            video.addEventListener("pause", function () {
+                playButton.style.display = "flex";
+            });
+
+            video.addEventListener("play", function () {
+                playButton.style.display = "none";
+            });
+        </script>
     </body>
 </html>
